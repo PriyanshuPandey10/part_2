@@ -1,25 +1,14 @@
-'use client'
-import React, { useState } from 'react'
+import React from 'react'
 
-export const page = () => {
-  const [username, setusername] = useState('')
+const page = () => {
   return (
     <>
-    <h1 className='mb-5 text-xxl'>Enter Your Name</h1>
-    <form>
-      <input type="text" className="border-2 border-zinc-800 px-4 py-2 text-xl" value={username}
-      onChange={(e)=>{
-        setusername(e.target.value)
-        console.log(username)
-        }}/>
+    <h1 className='text-xxl font-bold '>This is home page</h1>
+    <a href= "/Contact">Contact Us</a>
 
 
-
-
-    </form>
-
-    
     </>
   )
 }
+
 export default page
